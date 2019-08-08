@@ -13,6 +13,7 @@ type Writer interface {
 
 type SafeCSVWriter struct {
 	Writer
+	Comma rune
 	m sync.Mutex
 }
 
